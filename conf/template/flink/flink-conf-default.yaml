@@ -1,0 +1,8 @@
+env.java.opts: "-XX:CompileThreshold=1 -XX:-TieredCompilation"
+jobmanager.rpc.port: 6123
+jobmanager.memory.process.size: 8192m
+taskmanager.memory.process.size: 32768m
+taskmanager.numberOfTaskSlots: 8
+parallelism.default: 8
+jobmanager.execution.failover-strategy: region
+jobmanager.rpc.address: c07lp1
