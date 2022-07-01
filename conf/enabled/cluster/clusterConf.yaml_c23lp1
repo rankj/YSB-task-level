@@ -1,0 +1,17 @@
+kafka.brokers:
+    - "c25lp1"
+
+zookeeper.servers:
+    - "c06lp1"
+
+redis.host: c06lp1
+redis.port: 6379
+kafka.port: 9092
+zookeeper.port: 2181
+process.hosts: 1
+process.cores: 8
+process.parallelism: 8
+kafka.partitions: 8
+kafka.topic: "ad-events"
+spark.batchtime: 1000
+spark.checkpoint.interval: "10 seconds"
