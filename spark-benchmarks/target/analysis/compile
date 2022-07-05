@@ -1,0 +1,391 @@
+format version: 5
+output mode:
+1 items
+0 -> single
+output directories:
+1 items
+output dir -> /home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes
+compile options:
+3 items
+0 -> -unchecked
+1 -> -deprecation
+2 -> -feature
+javac options:
+12 items
+00 -> -source
+01 -> 1.8.0_275
+02 -> -target
+03 -> 1.8.0_275
+04 -> -Xlint:all,-serial,-path
+05 -> -g
+06 -> -target
+07 -> 1.8
+08 -> -source
+09 -> 1.8
+10 -> -encoding
+11 -> UTF-8
+compiler version:
+1 items
+0 -> 2.11.12
+compile order:
+1 items
+0 -> Mixed
+name hashing:
+1 items
+0 -> true
+products:
+17 items
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> /home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes/spark/benchmark/KafkaRedisAdvertisingStream$$anonfun$1.class
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> /home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes/spark/benchmark/KafkaRedisAdvertisingStream$$anonfun$2.class
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> /home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes/spark/benchmark/KafkaRedisAdvertisingStream$$anonfun$3.class
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> /home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes/spark/benchmark/KafkaRedisAdvertisingStream$$anonfun$4.class
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> /home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes/spark/benchmark/KafkaRedisAdvertisingStream$$anonfun$5.class
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> /home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes/spark/benchmark/KafkaRedisAdvertisingStream$$anonfun$6.class
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> /home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes/spark/benchmark/KafkaRedisAdvertisingStream$$anonfun$7.class
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> /home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes/spark/benchmark/KafkaRedisAdvertisingStream$$anonfun$8.class
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> /home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes/spark/benchmark/KafkaRedisAdvertisingStream$$anonfun$9.class
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> /home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes/spark/benchmark/KafkaRedisAdvertisingStream$$anonfun$joinHosts$1.class
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> /home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes/spark/benchmark/KafkaRedisAdvertisingStream$$anonfun$main$1$$anonfun$apply$1.class
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> /home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes/spark/benchmark/KafkaRedisAdvertisingStream$$anonfun$main$1.class
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> /home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes/spark/benchmark/KafkaRedisAdvertisingStream$$anonfun$queryRedis$1.class
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> /home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes/spark/benchmark/KafkaRedisAdvertisingStream$$anonfun$spark$benchmark$KafkaRedisAdvertisingStream$$writeWindow$1.class
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> /home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes/spark/benchmark/KafkaRedisAdvertisingStream$$anonfun$writeRedisTopLevel$1.class
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> /home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes/spark/benchmark/KafkaRedisAdvertisingStream$.class
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> /home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes/spark/benchmark/KafkaRedisAdvertisingStream.class
+binary dependencies:
+12 items
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> /home/jonasherget/.m2/repository/com/yahoo/stream/streaming-benchmark-common/0.1.0/streaming-benchmark-common-0.1.0.jar
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> /home/jonasherget/.m2/repository/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.jar
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> /home/jonasherget/.m2/repository/org/apache/kafka/kafka-clients/2.4.1/kafka-clients-2.4.1.jar
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> /home/jonasherget/.m2/repository/org/apache/kafka/kafka_2.11/2.4.1/kafka_2.11-2.4.1.jar
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> /home/jonasherget/.m2/repository/org/apache/spark/spark-core_2.11/2.4.7/spark-core_2.11-2.4.7.jar
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> /home/jonasherget/.m2/repository/org/apache/spark/spark-streaming-kafka-0-10_2.11/2.4.7/spark-streaming-kafka-0-10_2.11-2.4.7.jar
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> /home/jonasherget/.m2/repository/org/apache/spark/spark-streaming_2.11/2.4.7/spark-streaming_2.11-2.4.7.jar
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> /home/jonasherget/.m2/repository/org/json/json/20180813/json-20180813.jar
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> /home/jonasherget/.m2/repository/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> /home/jonasherget/.m2/repository/org/sedis/sedis_2.11/1.2.2/sedis_2.11-1.2.2.jar
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> /home/jonasherget/.m2/repository/redis/clients/jedis/2.9.0/jedis-2.9.0.jar
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.275.b01-6.fc33.x86_64/jre/lib/rt.jar
+direct source dependencies:
+0 items
+direct external dependencies:
+0 items
+public inherited source dependencies:
+0 items
+public inherited external dependencies:
+0 items
+member reference internal dependencies:
+0 items
+member reference external dependencies:
+0 items
+inheritance internal dependencies:
+0 items
+inheritance external dependencies:
+0 items
+class names:
+17 items
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> spark.benchmark.KafkaRedisAdvertisingStream
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> spark.benchmark.KafkaRedisAdvertisingStream$
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> spark.benchmark.KafkaRedisAdvertisingStream$$anonfun$1
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> spark.benchmark.KafkaRedisAdvertisingStream$$anonfun$2
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> spark.benchmark.KafkaRedisAdvertisingStream$$anonfun$3
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> spark.benchmark.KafkaRedisAdvertisingStream$$anonfun$4
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> spark.benchmark.KafkaRedisAdvertisingStream$$anonfun$5
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> spark.benchmark.KafkaRedisAdvertisingStream$$anonfun$6
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> spark.benchmark.KafkaRedisAdvertisingStream$$anonfun$7
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> spark.benchmark.KafkaRedisAdvertisingStream$$anonfun$8
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> spark.benchmark.KafkaRedisAdvertisingStream$$anonfun$9
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> spark.benchmark.KafkaRedisAdvertisingStream$$anonfun$joinHosts$1
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> spark.benchmark.KafkaRedisAdvertisingStream$$anonfun$main$1
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> spark.benchmark.KafkaRedisAdvertisingStream$$anonfun$main$1$$anonfun$apply$1
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> spark.benchmark.KafkaRedisAdvertisingStream$$anonfun$queryRedis$1
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> spark.benchmark.KafkaRedisAdvertisingStream$$anonfun$spark$benchmark$KafkaRedisAdvertisingStream$$writeWindow$1
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> spark.benchmark.KafkaRedisAdvertisingStream$$anonfun$writeRedisTopLevel$1
+used names:
+223 items
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> !=
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> *
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> +
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> ->
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> /
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> <init>
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> <repeated...>
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> <repeated>
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> ==
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> ?0
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> ?1
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> A
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> Any
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> AnyRef
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> Array
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> ArrowAssoc
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> AsScala
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> B
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> Boolean
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> Buffer
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> Class
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> ClassCastException
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> ClassTag
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> ConsumerRecord
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> ConsumerStrategies
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> DStream
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> Decorators
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> Dress
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> Duration
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> Function1
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> Function2
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> GenericObjectPoolConfig
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> HashMap
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> InputDStream
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> Int
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> Iterator
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> JSONObject
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> JavaConverters
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> Jedis
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> JedisPool
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> JedisPoolConfig
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> K
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> KafkaRedisAdvertisingStream
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> KafkaUtils
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> LinkedHashMap
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> List
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> LocationStrategies
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> LocationStrategy
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> Long
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> Map
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> Milliseconds
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> None
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> Nothing
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> Number
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> Object
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> Option
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> Ordering
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> PairDStreamFunctions
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> Platform
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> Pool
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> Predef
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> PreferConsistent
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> PrintStream
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> RDD
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> ScalaRunTime
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> Seq
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> Set
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> SparkConf
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> SparkContext
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> StreamingContext
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> String
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> StringBuilder
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> StringDecoder
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> StringDeserializer
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> StringOps
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> Subscribe
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> System
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> T
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> T0
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> T1
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> T2
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> Tuple2
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> U
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> UUID
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> Unit
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> Utils
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> V
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> Wrap
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> _$3
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> _$4
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> _$7
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> _1
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> _2
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> ad_id
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> ad_to_campaign
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> any2stringadd
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> apache
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> append
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> apply
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> args
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> arrayClass
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> asInstanceOf
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> asScala
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> asScalaBufferConverter
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> augmentString
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> awaitTermination
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> batchSize
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> benchmark
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> brokers
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> campaign
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> campaignTime
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> campaign_id
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> campaign_id_cache
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> campaign_id_temp
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> campaign_timeStamp
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> campaign_window_counts
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> campaign_window_counts_Iterator
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> campaign_window_pair
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> client
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> clients
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> close
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> collection
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> common
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> commonConfig
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> compat
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> consumer
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> createDirectStream
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> currentTime
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> delegateToJedis
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> dressUp
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> dstream
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> equals
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> err
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> event
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> eventProjection
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> eventsIterator
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> eventsIteratorMap
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> filter
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> filteredOnView
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> findAndReadConfigFile
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> foreach
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> foreachPartition
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> foreachRDD
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> get
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> getResource
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> getString
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> hincrBy
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> hmget
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> hosts
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> hset
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> isEmpty
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> isInstanceOf
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> java
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> jedis
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> joinHosts
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> joined
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> json
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> jsonString
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> kafka
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> kafka010
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> kafkaData
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> kafkaHosts
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> kafkaParams
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> kafkaPort
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> kafkaRawData
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> lang
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> longValue
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> lpush
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> map
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> mapPartitions
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> mapValues
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> materializeClassTag
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> math
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> messages
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> mutable
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> ne
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> org
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> package
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> parseJson
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> parser
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> pool
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> port
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> println
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> projected
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> put
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> queryRedis
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> queryRedisTopLevel
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> randomUUID
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> rdd
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> redis
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> redisHost
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> redisJoined
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> reduceByKey
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> scala
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> sedis
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> serialization
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> serializer
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> setAppName
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> spark
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> sparkConf
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> ssc
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> start
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> streaming
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> time_divisor
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> toLong
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> toPairDStreamFunctions
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> toSeq
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> toString
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> topic
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> topicsSet
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> totalEventsPerCampaignTime
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> unary_!
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> underlying
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> up
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> util
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> value
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> windowListUUID
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> windowUUID
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> window_seenCount
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> window_timestamp
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> withJedisClient
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> writeRedisTopLevel
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> writeWindow
+product stamps:
+17 items
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes/spark/benchmark/KafkaRedisAdvertisingStream$$anonfun$1.class -> lastModified(1612619803000)
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes/spark/benchmark/KafkaRedisAdvertisingStream$$anonfun$2.class -> lastModified(1612619803000)
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes/spark/benchmark/KafkaRedisAdvertisingStream$$anonfun$3.class -> lastModified(1612619803000)
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes/spark/benchmark/KafkaRedisAdvertisingStream$$anonfun$4.class -> lastModified(1612619803000)
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes/spark/benchmark/KafkaRedisAdvertisingStream$$anonfun$5.class -> lastModified(1612619803000)
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes/spark/benchmark/KafkaRedisAdvertisingStream$$anonfun$6.class -> lastModified(1612619803000)
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes/spark/benchmark/KafkaRedisAdvertisingStream$$anonfun$7.class -> lastModified(1612619803000)
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes/spark/benchmark/KafkaRedisAdvertisingStream$$anonfun$8.class -> lastModified(1612619803000)
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes/spark/benchmark/KafkaRedisAdvertisingStream$$anonfun$9.class -> lastModified(1612619803000)
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes/spark/benchmark/KafkaRedisAdvertisingStream$$anonfun$joinHosts$1.class -> lastModified(1612619803000)
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes/spark/benchmark/KafkaRedisAdvertisingStream$$anonfun$main$1$$anonfun$apply$1.class -> lastModified(1612619803000)
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes/spark/benchmark/KafkaRedisAdvertisingStream$$anonfun$main$1.class -> lastModified(1612619803000)
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes/spark/benchmark/KafkaRedisAdvertisingStream$$anonfun$queryRedis$1.class -> lastModified(1612619803000)
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes/spark/benchmark/KafkaRedisAdvertisingStream$$anonfun$spark$benchmark$KafkaRedisAdvertisingStream$$writeWindow$1.class -> lastModified(1612619803000)
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes/spark/benchmark/KafkaRedisAdvertisingStream$$anonfun$writeRedisTopLevel$1.class -> lastModified(1612619804000)
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes/spark/benchmark/KafkaRedisAdvertisingStream$.class -> lastModified(1612619803000)
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/target/classes/spark/benchmark/KafkaRedisAdvertisingStream.class -> lastModified(1612619803000)
+source stamps:
+1 items
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> hash(daa1af4e054a2d8a94dbfb1519d66b36ed49b3ef)
+binary stamps:
+12 items
+/home/jonasherget/.m2/repository/com/yahoo/stream/streaming-benchmark-common/0.1.0/streaming-benchmark-common-0.1.0.jar -> lastModified(1611230427000)
+/home/jonasherget/.m2/repository/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.jar -> lastModified(1610625077000)
+/home/jonasherget/.m2/repository/org/apache/kafka/kafka-clients/2.4.1/kafka-clients-2.4.1.jar -> lastModified(1611779099000)
+/home/jonasherget/.m2/repository/org/apache/kafka/kafka_2.11/2.4.1/kafka_2.11-2.4.1.jar -> lastModified(1611823512000)
+/home/jonasherget/.m2/repository/org/apache/spark/spark-core_2.11/2.4.7/spark-core_2.11-2.4.7.jar -> lastModified(1611830491000)
+/home/jonasherget/.m2/repository/org/apache/spark/spark-streaming-kafka-0-10_2.11/2.4.7/spark-streaming-kafka-0-10_2.11-2.4.7.jar -> lastModified(1612167120000)
+/home/jonasherget/.m2/repository/org/apache/spark/spark-streaming_2.11/2.4.7/spark-streaming_2.11-2.4.7.jar -> lastModified(1611830491000)
+/home/jonasherget/.m2/repository/org/json/json/20180813/json-20180813.jar -> lastModified(1610625104000)
+/home/jonasherget/.m2/repository/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar -> lastModified(1611155876000)
+/home/jonasherget/.m2/repository/org/sedis/sedis_2.11/1.2.2/sedis_2.11-1.2.2.jar -> lastModified(1611155944000)
+/home/jonasherget/.m2/repository/redis/clients/jedis/2.9.0/jedis-2.9.0.jar -> lastModified(1610625077000)
+/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.275.b01-6.fc33.x86_64/jre/lib/rt.jar -> lastModified(1608632790000)
+class names:
+12 items
+/home/jonasherget/.m2/repository/com/yahoo/stream/streaming-benchmark-common/0.1.0/streaming-benchmark-common-0.1.0.jar -> benchmark.common.Utils
+/home/jonasherget/.m2/repository/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.jar -> org.apache.commons.pool2.impl.GenericObjectPoolConfig
+/home/jonasherget/.m2/repository/org/apache/kafka/kafka-clients/2.4.1/kafka-clients-2.4.1.jar -> org.apache.kafka.common.serialization.StringDeserializer
+/home/jonasherget/.m2/repository/org/apache/kafka/kafka_2.11/2.4.1/kafka_2.11-2.4.1.jar -> kafka.serializer.StringDecoder$
+/home/jonasherget/.m2/repository/org/apache/spark/spark-core_2.11/2.4.7/spark-core_2.11-2.4.7.jar -> org.apache.spark.SparkContext
+/home/jonasherget/.m2/repository/org/apache/spark/spark-streaming-kafka-0-10_2.11/2.4.7/spark-streaming-kafka-0-10_2.11-2.4.7.jar -> org.apache.spark.streaming.kafka010.LocationStrategy
+/home/jonasherget/.m2/repository/org/apache/spark/spark-streaming_2.11/2.4.7/spark-streaming_2.11-2.4.7.jar -> org.apache.spark.streaming.StreamingContext$
+/home/jonasherget/.m2/repository/org/json/json/20180813/json-20180813.jar -> org.json.JSONObject
+/home/jonasherget/.m2/repository/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar -> scala.Tuple2$
+/home/jonasherget/.m2/repository/org/sedis/sedis_2.11/1.2.2/sedis_2.11-1.2.2.jar -> org.sedis.Pool
+/home/jonasherget/.m2/repository/redis/clients/jedis/2.9.0/jedis-2.9.0.jar -> redis.clients.jedis.Jedis
+/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.275.b01-6.fc33.x86_64/jre/lib/rt.jar -> java.lang.Object
+internal apis:
+1 items
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwDyqvQAAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAcc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwMm/oanQAG0thZmthUmVkaXNBZHZlcnRpc2luZ1N0cmVhbXNxAH4ADI3c5CB0AAZub3RpZnlzcQB+AAylxgUydAAKcXVlcnlSZWRpc3NxAH4ADOyw/BV0AAR3YWl0c3EAfgAMJu3pEHQADSRhc0luc3RhbmNlT2ZzcQB+AAwDnubOdAAScXVlcnlSZWRpc1RvcExldmVsc3EAfgAM/y8sFnQABmVxdWFsc3NxAH4ADNvL9Qt0AAlwYXJzZUpzb25zcQB+AAyt9WTJdAAMYXNJbnN0YW5jZU9mc3EAfgAM8LAAfXQADGNhbXBhaWduVGltZXNxAH4ADCYZ1YJ0AAxzeW5jaHJvbml6ZWRzcQB+AAxj3PRedAAJam9pbkhvc3Rzc3EAfgAM+SxGiHQADSRpc0luc3RhbmNlT2ZzcQB+AAw9VkdLdAAEbWFpbnNxAH4ADN0GCAd0AAlub3RpZnlBbGxzcQB+AAy8kU1HdAAMaXNJbnN0YW5jZU9mc3EAfgAMxc9e7HQAAj09c3EAfgAMAlBIEXQABWNsb25lc3EAfgAMG2ALcnQACHRvU3RyaW5nc3EAfgAMhuswC3QAAiE9c3EAfgAM0sYwCnQACGdldENsYXNzc3EAfgAMSu5NCHQAAm5lc3EAfgAMHHV2yXQAAmVxc3EAfgAMsoJvXHQAD2V2ZW50UHJvamVjdGlvbnNxAH4ADOvo4lt0ABJ3cml0ZVJlZGlzVG9wTGV2ZWxzcQB+AAxc4N6kdAACIyNzcQB+AAyCZy0xdAAIZmluYWxpemVzcQB+AAx7BeG4dAAIaGFzaENvZGVzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAABc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgBPeHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnOX52HcEyZ7swIAAUIABWZsYWdzeHAAdAArc3BhcmsuYmVuY2htYXJrLkthZmthUmVkaXNBZHZlcnRpc2luZ1N0cmVhbXVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgAheHNidGkuYXBpLkFic3RyYWN0TGF6eSRTdHJpY3RMYXp5DWYcaykWKrgCAAFMAAV2YWx1ZXQAEkxqYXZhL2xhbmcvT2JqZWN0O3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AZ3NyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBPTAAJaW5oZXJpdGVkcQB+AE9MAAdwYXJlbnRzcQB+AE94cQB+AGxzcQB+AGd1cQB+AEoAAAABc3IADXhzYnRpLmFwaS5EZWZSvp/ifLQ2aQIAAkwACnJldHVyblR5cGV0ABBMeHNidGkvYXBpL1R5cGU7WwAPdmFsdWVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvUGFyYW1ldGVyTGlzdDt4cQB+AFBxAH4AWXVxAH4AWgAAAABzcQB+AFwAcQB+ACl1cQB+AF8AAAAAc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4Aa3QABFVuaXRzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AGtzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAAJzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABXNjYWxhc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AId1cgAaW0x4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdDv10zod8rNw7gIAAHhwAAAAAXNyABd4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdNbFvBxkSXTjAgACWgAKaXNJbXBsaWNpdFsACnBhcmFtZXRlcnN0ABxbTHhzYnRpL2FwaS9NZXRob2RQYXJhbWV0ZXI7eHAAdXIAHFtMeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlcjvPuMVdpd21bQIAAHhwAAAAAXNyABl4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyH0WuF9NJsOoCAARaAApoYXNEZWZhdWx0TAAIbW9kaWZpZXJ0AB1MeHNidGkvYXBpL1BhcmFtZXRlck1vZGlmaWVyO0wABG5hbWVxAH4ADUwAA3RwZXEAfgB0eHAAfnIAG3hzYnRpLmFwaS5QYXJhbWV0ZXJNb2RpZmllcgAAAAAAAAAAEgAAeHEAfgBidAAFUGxhaW50AARhcmdzc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJpemVkFmzuaQPJu38CAAJMAAhiYXNlVHlwZXEAfgB7WwANdHlwZUFyZ3VtZW50c3QAEVtMeHNidGkvYXBpL1R5cGU7eHEAfgBrc3EAfgB6dAAFQXJyYXlxAH4AgHVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAABc3EAfgB6dAAGU3RyaW5nc3EAfgB+c3EAfgCBdXEAfgCEAAAAA3NxAH4AhnQABGphdmFzcQB+AIZ0AARsYW5ncQB+AItzcQB+AGd1cQB+AEoAAAAAc3EAfgBndXEAfgCfAAAAAnNxAH4AenQABk9iamVjdHEAfgCjc3EAfgB6dAADQW55cQB+AIB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAnNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0AAVzcGFya3NxAH4AtHQAD3NwYXJrLmJlbmNobWFya3NyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABd3ehVsh1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdABXL2hvbWUvam9uYXNoZXJnZXQvSm9uYXMvQXJiZWl0L25ldy9zdHJlYW1pbmctYmVuY2htYXJrcy9zcGFyay1iZW5jaG1hcmtzL3RhcmdldC9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAU2qGvTgVKLYqU2/sVGdZrNu1Js+8=
+external apis:
+0 items
+source infos:
+1 items
+/home/jonasherget/Jonas/Arbeit/new/streaming-benchmarks/spark-benchmarks/src/main/scala/AdvertisingSpark.scala -> 
+AAAAAAAAAAA=
+compilations:
+1 items
+0 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABd3ehVsh1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAVy9ob21lL2pvbmFzaGVyZ2V0L0pvbmFzL0FyYmVpdC9uZXcvc3RyZWFtaW5nLWJlbmNobWFya3Mvc3BhcmstYmVuY2htYXJrcy90YXJnZXQvY2xhc3Nlc3QAAS8=

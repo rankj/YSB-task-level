@@ -1,20 +1,16 @@
 #################################################
 # User defined variables
 #################################################
-PROJECT_HOME=/root/YSB/sps_cpu_bench_internal
+PROJECT_HOME=/YSB-task-level
 DOWNLOAD_DIRECTORY=$PROJECT_HOME/downloads
 
 # Make sure these version are available for download
 # e.g. REDIS_VERSION="6.0.10" translates to wget https://download.redis.io/releases/redis-6.0.10.tar.gz
 KAFKA_VERSION="3.0.0"
 KAFKA_SCALA_VERSION="2.12"
-#KAFKA_VERSION="2.4.1"
-#KAFKA_SCALA_VERSION="2.11"
 REDIS_VERSION="6.0.10"
 FLINK_VERSION="1.14.3"
 FLINK_SCALA_VERSION="2.12"
-#FLINK_VERSION="1.12.1"
-#FLINK_SCALA_VERSION="2.11"
 
 SPARK_VERSION="3.2.0"
 SPARK_HADOOP_VERSION="2.7"
@@ -36,9 +32,12 @@ ProfilerPath="$PROJECT_HOME/profiling/scripts/sps_profiler.sh"
 FlinkMaster="${ENABLEDCONF_FILEPATH}/flink/masters"
 FlinkWorkers="${ENABLEDCONF_FILEPATH}/flink/workers"
 FlinkConf="${ENABLEDCONF_FILEPATH}/flink/flink-conf.yaml"
+FlinkProfile="${ENABLEDCONF_FILEPATH}/profile/flink_application_profile.txt"
 SparkSlaves="${ENABLEDCONF_FILEPATH}/spark/slaves"
 SparkConf="${ENABLEDCONF_FILEPATH}/spark/spark-defaults.conf"
 SparkEnv="${ENABLEDCONF_FILEPATH}/spark/spark-env.sh"
+SparkProfile="${ENABLEDCONF_FILEPATH}/profile/spark_application_profile.txt"
+SparkCPProfile="${ENABLEDCONF_FILEPATH}/profile/spark_cp_application_profile.txt"
 ClusterConf="${ENABLEDCONF_FILEPATH}/cluster/clusterConf.yaml"
 LoadGen="${ENABLEDCONF_FILEPATH}/load/core.clj"
 KafkaConf="${ENABLEDCONF_FILEPATH}/kafka/server.properties"
@@ -48,9 +47,12 @@ RedisConf="${ENABLEDCONF_FILEPATH}/redis/redis.conf"
 FlinkMasterDefault="${TEMPLATECONF_FILEPATH}/flink/flink-master-default"
 FlinkWorkersDefault="${TEMPLATECONF_FILEPATH}/flink/flink-workers-default"
 FlinkConfDefault="${TEMPLATECONF_FILEPATH}/flink/flink-conf-default.yaml"
+FlinkProfileDefault="${TEMPLATECONF_FILEPATH}/profile/flink_application_profile.txt"
 SparkSlavesDefault="${TEMPLATECONF_FILEPATH}/spark/spark-slaves-default"
 SparkConfDefault="${TEMPLATECONF_FILEPATH}/spark/spark-defaults.conf"
 SparkEnvDefault="${TEMPLATECONF_FILEPATH}/spark/spark-env-default.sh"
+SparkProfileDefault="${TEMPLATECONF_FILEPATH}/profile/spark_application_profile.txt"
+SparkCPProfileDefault="${TEMPLATECONF_FILEPATH}/profile/spark_cp_application_profile.txt"
 ClusterConfDefault="${TEMPLATECONF_FILEPATH}/cluster/clusterConf-default.yaml"
 LoadGenDefault="${TEMPLATECONF_FILEPATH}/load/core-default.clj"
 KafkaConfDefault="${TEMPLATECONF_FILEPATH}/kafka/server-default.properties"
@@ -73,9 +75,6 @@ textReplace(){
   SEARCH=$1
   REPLACE=$2
   FILE=$3
-  #echo "Searching for $SEARCH"
-  #echo "Replacing with $REPLACE"
-  #echo "In file $FILE"
   sed -i --follow-symlinks "s/^${SEARCH}.*/${REPLACE}/g" $FILE
 }
 
@@ -83,33 +82,35 @@ createDefaultConfigs(){
     rm -f $FlinkMasterDefault
     rm -f $FlinkWorkersDefault
     rm -f $FlinkConfDefault
+	rm -f $FlinkProfile
     rm -f $SparkSlavesDefault
     rm -f $SparkConfDefault
     rm -f $SparkEnvDefault
+	rm -f $SparkProfile
+	rm -f $SparkCPProfile
     rm -f $ClusterConfDefault
     rm -f $KafkaConfDefault
     rm -f $RedisConfDefault
 
-    # Replace versions in stream-bench.sh
-    #sed -i "s/$search/$replace/" $PROJECT_HOME/stream-bench.sh
-
-    sed -i "s/^KAFKA_VERSION=.*/KAFKA_VERSION=\"${KAFKA_VERSION}\"/g" $PROJECT_HOME/stream-bench.sh
-    sed -i "s/^KAFKA_SCALA_VERSION=.*/KAFKA_SCALA_VERSION=\"${KAFKA_SCALA_VERSION}\"/g" $PROJECT_HOME/stream-bench.sh
-    sed -i "s/^SPARK_VERSION=.*/SPARK_VERSION=\"${SPARK_VERSION}\"/g" $PROJECT_HOME/stream-bench.sh
-    sed -i "s/^SPARK_HADOOP_VERSION=.*/SPARK_HADOOP_VERSION=\"${SPARK_HADOOP_VERSION}\"/g" $PROJECT_HOME/stream-bench.sh
-    sed -i "s/^REDIS_VERSION=.*/REDIS_VERSION=\"${REDIS_VERSION}\"/g" $PROJECT_HOME/stream-bench.sh
-    sed -i "s/^FLINK_VERSION=.*/FLINK_VERSION=\"${FLINK_VERSION}\"/g" $PROJECT_HOME/stream-bench.sh
-    sed -i "s/^FLINK_SCALA_VERSION=.*/FLINK_SCALA_VERSION=\"${FLINK_SCALA_VERSION}\"/g" $PROJECT_HOME/stream-bench.sh
+    # Replace versions in stream-bench2.sh
+    sed -i "s/^KAFKA_VERSION=.*/KAFKA_VERSION=\"${KAFKA_VERSION}\"/g" $PROJECT_HOME/stream-bench2.sh
+    sed -i "s/^KAFKA_SCALA_VERSION=.*/KAFKA_SCALA_VERSION=\"${KAFKA_SCALA_VERSION}\"/g" $PROJECT_HOME/stream-bench2.sh
+    sed -i "s/^SPARK_VERSION=.*/SPARK_VERSION=\"${SPARK_VERSION}\"/g" $PROJECT_HOME/stream-bench2.sh
+    sed -i "s/^SPARK_HADOOP_VERSION=.*/SPARK_HADOOP_VERSION=\"${SPARK_HADOOP_VERSION}\"/g" $PROJECT_HOME/stream-bench2.sh
+    sed -i "s/^REDIS_VERSION=.*/REDIS_VERSION=\"${REDIS_VERSION}\"/g" $PROJECT_HOME/stream-bench2.sh
+    sed -i "s/^FLINK_VERSION=.*/FLINK_VERSION=\"${FLINK_VERSION}\"/g" $PROJECT_HOME/stream-bench2.sh
+    sed -i "s/^FLINK_SCALA_VERSION=.*/FLINK_SCALA_VERSION=\"${FLINK_SCALA_VERSION}\"/g" $PROJECT_HOME/stream-bench2.sh
     # Escape all '/' in PROJECT_HOME, otherwise sed can not process it
     PROJECT_HOME2=$(echo $PROJECT_HOME | sed 's_/_\\/_g')
-    sed -i "s/^PROJECT_HOME=.*/PROJECT_HOME=${PROJECT_HOME2}/g" $PROJECT_HOME/stream-bench.sh
+    sed -i "s/^PROJECT_HOME=.*/PROJECT_HOME=${PROJECT_HOME2}/g" $PROJECT_HOME/stream-bench2.sh
     sed -i "s/^PROJECT_HOME=.*/PROJECT_HOME=${PROJECT_HOME2}/g" $PROJECT_HOME/profiling/scripts/sps_profiler.sh
 
 
     ##########
     #Create Default Configuration Files
     ##########
-    echo "spark.driver.memory 16g" >> $SparkConfDefault
+	echo "spark.executor.extraJavaOptions=-XX:-TieredCompilation -XX:CompileThreshold=1" >> $SparkConfDefault
+	echo "spark.driver.memory 16g" >> $SparkConfDefault
     echo "spark.executor.memory 8g" >> $SparkConfDefault
     echo "spark.executor.cores 8" >> $SparkConfDefault
     echo "spark.driver.cores 16" >> $SparkConfDefault
@@ -117,7 +118,8 @@ createDefaultConfigs(){
     echo "spark.task.cpus 8" >> $SparkConfDefault
     echo "spark.eventLog.enabled  false " >> $SparkConfDefault
 
-    echo "jobmanager.rpc.port: 6123" >> $FlinkConfDefault
+    echo "env.java.opts: \"-XX:CompileThreshold=1 -XX:-TieredCompilation\"" >> $FlinkConfDefault
+	echo "jobmanager.rpc.port: 6123" >> $FlinkConfDefault
     echo "jobmanager.memory.process.size: 1600m" >> $FlinkConfDefault
     echo "taskmanager.memory.process.size: 4096m" >> $FlinkConfDefault
     echo "taskmanager.numberOfTaskSlots: 8" >> $FlinkConfDefault
@@ -134,7 +136,7 @@ createDefaultConfigs(){
     echo "socket.send.buffer.bytes=2147483647"  >> $KafkaConfDefault
     echo "socket.receive.buffer.bytes=2147483647"  >> $KafkaConfDefault
     echo "socket.request.max.bytes=104857600"  >> $KafkaConfDefault
-    echo "log.dirs=/tmp/ramdisk/kafka-logs"  >> $KafkaConfDefault
+    echo "log.dirs=/tmp/kafka-logs"  >> $KafkaConfDefault
     echo "num.recovery.threads.per.data.dir=1"  >> $KafkaConfDefault
     echo "offsets.topic.replication.factor=1"  >> $KafkaConfDefault
     #echo "transaction.state.log.replication.factor=1"  >> $KafkaConfDefault
@@ -269,9 +271,12 @@ createDefaultConfigs(){
     rm -f $FlinkMaster
     rm -f $FlinkWorkers
     rm -f $FlinkConf
+	rm -f $FlinkProfile
     rm -f $SparkSlaves
     rm -f $SparkConf
     rm -f $SparkEnv
+	rm -f $SparkProfile
+	rm -f $SparkCPProfile
     rm -f $ClusterConf
     rm -f $LoadGen
     rm -f $KafkaConf
@@ -280,14 +285,19 @@ createDefaultConfigs(){
     ln -s $FlinkMasterDefault $FlinkMaster
     ln -s $FlinkWorkersDefault $FlinkWorkers
     ln -s $FlinkConfDefault $FlinkConf
+	ln -s $FlinkProfileDefault $FlinkProfile
     ln -s $SparkSlavesDefault $SparkSlaves
     ln -s $SparkConfDefault $SparkConf
     ln -s $SparkEnvDefault $SparkEnv
+	ln -s $SparkProfileDefault $SparkProfile
+	ln -s $SparkCPProfileDefault $SparkCPProfile
     ln -s $ClusterConfDefault $ClusterConf
     ln -s $LoadGenDefault $LoadGen
     ln -s $KafkaConfDefault $KafkaConf
     ln -s $RedisConfDefault $RedisConf
 }
+
+# Copy config files to cluster machines
 deployConfigs(){
     readHostRoles		
 	for HOST in "${!HOST_ROLES[@]}"; do
@@ -335,19 +345,17 @@ deployConfigs(){
         scp ${KafkaConf}_${HOST} $HOST:$PROJECT_HOME/kafka_${KAFKA_SCALA_VERSION}-${KAFKA_VERSION}/config/server.properties &
       fi
       if [[ $ROLE == *"LOAD"* ]]; then
-       #TODO For final release this will be part of initializeProject
 	   KAFKA_BROKER=${KAFKA_HOSTS[$counter]}
 	   counter=$((counter+1))
 	   counter=$((counter%len))
 	   sed -n '$!N;s@kafka.brokers:\n    - "c06lp1"@kafka.brokers:\n    - "'"${KAFKA_BROKER}"'"@;P;D' $ClusterConf > ${ClusterConf}_${HOST}
-
-	#textReplace "broker.id=" "broker.id=${BROKER}" ${KafkaConf}_${HOST} 
        ssh -n $HOST "rm -f $PROJECT_HOME/data/src/setup/core.clj"
        scp $LoadGen $HOST:$PROJECT_HOME/data/src/setup/
        scp $ClusterConf $HOST:$PROJECT_HOME/conf/ &
       fi
     done
 }
+
 deployFile(){
     readHostRoles
     FILE=${1}
@@ -361,6 +369,7 @@ deployFile(){
         fi
     done
 }
+
 deployFrameworks(){
   #Deploy frameworks on cluster
   readHostRoles
@@ -398,12 +407,12 @@ deployFrameworks(){
           if [[ $(ssh -n $HOST "cd $PROJECT_HOME; ls | grep -c redis-${REDIS_VERSION}") == 0 ]]; then
             scp $DOWNLOAD_DIRECTORY/redis-${REDIS_VERSION}.tar.gz $HOST:$PROJECT_HOME/
             ssh -n $HOST "cd $PROJECT_HOME; tar -xzvf redis-${REDIS_VERSION}.tar.gz; rm redis-${REDIS_VERSION}.tar.gz"
-            ssh -n $HOST "source /etc/profile; cd $PROJECT_HOME/redis-${REDIS_VERSION}; make"
-            echo "Redis build completed"
+            #ssh -n $HOST "source /etc/profile; cd $PROJECT_HOME/redis-${REDIS_VERSION}; make"
+            #echo "Redis build completed"
             ssh -n $HOST "ln -s $PROJECT_HOME/redis-${REDIS_VERSION}/src/redis-cli /usr/bin/redis-cli"
             scp -r $PROJECT_HOME/utils $HOST:$PROJECT_HOME/
-
-            exit
+			echo "[DEPLOY] please compile Redis manually on host $HOST !!!"
+			echo "[DEPLOY] cd $PROJECT_HOME/redis-${REDIS_VERSION}; make"   
           fi
         fi
 
@@ -421,6 +430,8 @@ deployFrameworks(){
         fi
       done
 }
+
+
 downloadFrameworks(){
   mkdir -p $DOWNLOAD_DIRECTORY && cd $DOWNLOAD_DIRECTORY
 
@@ -452,86 +463,9 @@ downloadFrameworks(){
       echo "[ERROR] spark-${SPARK_VERSION}-bin-hadoop${SPARK_HADOOP_VERSION}.tgz couldn't be downloaded"
   fi
 }
-downloadFrameworksJonas(){
-  {
 
-  while IFS= read -r line
-  do
-    local HOST=`echo $line`
-    ssh -n $HOST "mkdir -p $PROJECT_HOME;"
-	scp -r ./conf/ $HOST:$PROJECT_HOME
-	scp ./stream-bench.sh $HOST:$PROJECT_HOME
-	scp -r ./profiling/ $HOST:$PROJECT_HOME
-	ssh -n $HOST "echo $PASSWORD | sudo -S apt-get install -y openjdk-8-jdk openjdk-8-dbg zip git;"
-	KernelVersion=$(ssh -n $HOST "uname -r;")
-	ssh -n $HOST "echo $PASSWORD | sudo -S apt-get install -y linux-tools-common linux-tools-$KernelVersion;"
-	ssh -n $HOST "echo $PASSWORD | sudo snap -S install --devmode bpftrace; echo $PASSWORD | sudo -S snap connect bpftrace:system-trace;"
-	ssh -n $HOST "echo $PASSWORD | sudo -S apt install -y cmake;"
-	ssh -n $HOST "echo $PASSWORD | sudo -S apt-get install -y build-essential;"
 
-	if [[ $(ssh -n $HOST "cd /usr/lib/jvm; ls | grep -c java-8-openjdk-ppc64el ;") == 1 ]]; then
-      ssh -n $HOST "echo 'export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-ppc64el/' >> ~/.bashrc; source ~/.bashrc;"
-	elif [[ $(ssh -n $HOST "cd /usr/lib/jvm; ls | grep -c java-8-openjdk-amd64 ;") == 1 ]]; then
-      ssh -n $HOST "echo 'export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/' >> ~/.bashrc; source ~/.bashrc;"
-	else
-	  echo "Pls set JAVA_HOME manually. Could not find java installation path."
-	fi
-  done
-  } < $HOSTS_FILE
 
-  {
-  while IFS= read -r line
-  do
-    local HOST=`echo $line | awk '{print $1}'`
-    local ROLE=`echo $line | awk '{print $2}'`
-    if [[ $ROLE == *"LOAD"* ]]; then
-	      ssh -n $HOST "echo $PASSWORD | sudo -S apt install -y leiningen;"
-        scp -r ./data/ $HOST:$PROJECT_HOME
-    elif [[ $ROLE == *"REDIS_KAFKA"* ]]; then
-      ssh -n $HOST "cd $PROJECT_HOME; wget https://archive.apache.org/dist/kafka/2.4.1/kafka_2.11-2.4.1.tgz; tar -xzvf kafka_2.11-2.4.1.tgz;"
-	    ssh -n $HOST "cd $PROJECT_HOME; wget https://download.redis.io/releases/redis-6.0.10.tar.gz; tar -xzvf redis-6.0.10.tar.gz; cd redis-6.0.10; make;"
-	elif [[ $ROLE == *"MASTER"* ]]; then
-    if [[ $(ssh -n $HOST "cd $PROJECT_HOME; ls | grep -c flink-benchmarks") == 0 ]]; then
-      scp -r ./flink-benchmarks/ $HOST:$PROJECT_HOME
-    fi
-    if [[ $(ssh -n $HOST "cd $PROJECT_HOME; ls | grep -c streaming-benchmark-common") == 0 ]]; then
-      scp -r ./streaming-benchmark-common/ $HOST:$PROJECT_HOME
-    fi
-      if [[ $(ssh -n $HOST "cd $PROJECT_HOME; ls | grep -c spark-benchmarks") == 0 ]]; then
-      scp -r ./spark-benchmarks/ $HOST:$PROJECT_HOME
-    fi
-	  if [[ $(ssh -n $HOST "cd $PROJECT_HOME; ls | grep -c flink-1.12.1") == 0 ]]; then
-	    ssh -n $HOST "cd $PROJECT_HOME; wget https://archive.apache.org/dist/flink/flink-1.12.1/flink-1.12.1-bin-scala_2.11.tgz; tar -xzvf flink-1.12.1-bin-scala_2.11.tgz; rm flink-1.12.1-bin-scala_2.11.tgz;"
-	  fi
-	  if [[ $(ssh -n $HOST "cd $PROJECT_HOME; ls | grep -c spark-2.4.7*") == 0 ]]; then
-	    ssh -n $HOST "cd $PROJECT_HOME; wget https://archive.apache.org/dist/spark/spark-2.4.7/spark-2.4.7-bin-hadoop2.7.tgz; tar -xzvf spark-2.4.7-bin-hadoop2.7.tgz; rm spark-2.4.7-bin-hadoop2.7.tgz;"
-	  fi
-	elif [[ $ROLE == *"SLAVE"* ]]; then
-      if [[ $(ssh -n $HOST "cd $PROJECT_HOME; ls | grep -c flink-1.12.1") == 0 ]]; then
-	    ssh -n $HOST "cd $PROJECT_HOME; wget https://archive.apache.org/dist/flink/flink-1.12.1/flink-1.12.1-bin-scala_2.11.tgz; tar -xzvf flink-1.12.1-bin-scala_2.11.tgz; rm flink-1.12.1-bin-scala_2.11.tgz;"
-	  fi
-	  if [[ $(ssh -n $HOST "cd $PROJECT_HOME; ls | grep -c flink-benchmarks") == 0 ]]; then
-	    scp -r ./flink-benchmarks/ $HOST:$PROJECT_HOME
-	  fi
-	  if [[ $(ssh -n $HOST "cd $PROJECT_HOME; ls | grep -c streaming-benchmark-common") == 0 ]]; then
-	    scp -r ./streaming-benchmark-common/ $HOST:$PROJECT_HOME
-	  fi
-      if [[ $(ssh -n $HOST "cd $PROJECT_HOME; ls | grep -c spark-benchmarks") == 0 ]]; then
-	    scp -r ./spark-benchmarks/ $HOST:$PROJECT_HOME
-	  fi
-	  if [[ $(ssh -n $HOST "cd $PROJECT_HOME; ls | grep -c spark-2.4.7*") == 0 ]]; then
-	    ssh -n $HOST "cd $PROJECT_HOME; wget https://archive.apache.org/dist/spark/spark-2.4.7/spark-2.4.7-bin-hadoop2.7.tgz; tar -xzvf spark-2.4.7-bin-hadoop2.7.tgz; rm spark-2.4.7-bin-hadoop2.7.tgz;"
-	  fi
-    elif [[ $ROLE == *"KAFKA"* ]]; then
-      ssh -n $HOST "cd $PROJECT_HOME; wget https://archive.apache.org/dist/kafka/2.4.1/kafka_2.11-2.4.1.tgz; tar -xzvf kafka_2.11-2.4.1.tgz; rm kafka_2.11-2.4.1.tgz;"
-
-	  elif [[ $ROLE == *"REDIS"* ]]; then
-      ssh -n $HOST "cd $PROJECT_HOME; wget https://download.redis.io/releases/redis-6.0.10.tar.gz; tar -xzvf redis-6.0.10.tar.gz; rm redis-6.0.10.tar.gz;"
-    fi
-  done
-  } < $CLUSTER_FILEPATH
-
-}
 initializeProject(){
   #Deploy the initial project structure including BPF, perf scripts, java mapping agent, ...
   readHostRoles
@@ -541,13 +475,13 @@ initializeProject(){
     echo "[INFO] initialize Host $HOST with Role $ROLE"
           ssh -n $HOST "mkdir -p $PROJECT_HOME/conf"
           ssh -n $HOST "mkdir -p $PROJECT_HOME/profiling"
-          echo "[INFO] Copy stream-bench.sh and clusterConf.yaml"
-          scp ./stream-bench.sh $HOST:$PROJECT_HOME/
+          echo "[INFO] Copy stream-bench2.sh and clusterConf.yaml"
+          scp ./stream-bench2.sh $HOST:$PROJECT_HOME/
           scp -r ./conf/clusterConf.yaml $HOST:$PROJECT_HOME/conf/
-
+		  scp -r ./profiling/scripts $HOST:$PROJECT_HOME/profiling/
     if [[ $ROLE == *"MASTER"* || $ROLE == *"SLAVE"* ]]; then
         echo "[INFO] Copy profiling folder and setup java"
-        scp -r ./profiling/config ./profiling/scripts $HOST:$PROJECT_HOME/profiling/
+        scp -r ./profiling/config $HOST:$PROJECT_HOME/profiling/
         USER=$(whoami)
         PLATFORM=""
         if [ $USER == "root" ]; then
@@ -578,11 +512,11 @@ initializeProject(){
           fi
           echo "[INFO] Installing bpftrace and setup perf-map-agent and FlameGraph"
           ssh -n $HOST "apt-get install -y linux-tools-common linux-tools-$KernelVersion;"
-          ssh -n $HOST "snap -S install --devmode bpftrace; snap connect bpftrace:system-trace;"
+          #ssh -n $HOST "snap -S install --devmode bpftrace; snap connect bpftrace:system-trace;"
           ssh -n $HOST "apt install -y cmake;"
           ssh -n $HOST "apt-get install -y build-essential;"
           ssh -n $HOST "cd $PROJECT_HOME/profiling ; git clone https://github.com/jvm-profiling-tools/perf-map-agent.git;"
-          ssh -n $HOST "cd $PROJECT_HOME/profiling/perf-map-agent; ${PLATFORM}/; cmake .; make ;"
+          #ssh -n $HOST "cd $PROJECT_HOME/profiling/perf-map-agent; ${PLATFORM}/; cmake .; make ;"
           ssh -n $HOST "cd $PROJECT_HOME/profiling/; git clone https://github.com/brendangregg/FlameGraph.git"
         else
           echo "[INFO] Copy profiling folder and setup java"
@@ -601,14 +535,14 @@ initializeProject(){
           fi
           echo "[INFO] Installing bpftrace and setup perf-map-agent and FlameGraph"
           ssh -n $HOST "echo $PASSWORD | sudo -S apt-get install -y linux-tools-common linux-tools-$KernelVersion;"
-          ssh -n $HOST "echo $PASSWORD | sudo snap -S install --devmode bpftrace; echo $PASSWORD | sudo -S snap connect bpftrace:system-trace;"
+          #ssh -n $HOST "echo $PASSWORD | sudo snap -S install --devmode bpftrace; echo $PASSWORD | sudo -S snap connect bpftrace:system-trace;"
           ssh -n $HOST "echo $PASSWORD | sudo -S apt install -y cmake;"
           ssh -n $HOST "echo $PASSWORD | sudo -S apt-get install -y build-essential;"
           ssh -n $HOST "cd $PROJECT_HOME/profiling ; git clone https://github.com/jvm-profiling-tools/perf-map-agent.git;"
-          ssh -n $HOST "cd $PROJECT_HOME/profiling/perf-map-agent; export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-${PLATFORM}/; cmake .; make ;"
+          #ssh -n $HOST "cd $PROJECT_HOME/profiling/perf-map-agent; export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-${PLATFORM}/; cmake .; make ;"
           ssh -n $HOST "echo $PASSWORD | cd $PROJECT_HOME/profiling/; git clone https://github.com/brendangregg/FlameGraph.git"
           # Hardcode JAVA_HOME in perf-map-agent.sh
-          ssh -n $HOST "sed -i '1iJAVA_HOME=$TARGET_JAVA_HOME' $PROJECT_HOME/profiling/perf-map-agent/bin/create-java-perf-map.sh"
+          #ssh -n $HOST "sed -i '1iJAVA_HOME=$TARGET_JAVA_HOME' $PROJECT_HOME/profiling/perf-map-agent/bin/create-java-perf-map.sh"
         fi
 
 
@@ -628,7 +562,10 @@ initializeProject(){
 
   done
 }
+
+
 keyExchange(){
+prepareHostsFile
 # Check if sshpass is installed
 echo "Setting up passwordless access to clusternodes:"
 cat $HOSTS_FILEPATH
@@ -691,15 +628,20 @@ fi
       esac
       # Add Hosts to known_hosts file in order to prevent the warning prompt upon first connection attempt
       ssh-keyscan -H $line >> ~/.ssh/known_hosts
-
+	  scp ~/.ssh/id_rsa $line:~/.ssh/id_rsa
+	  
+  done < <(grep . "${HOSTS_FILEPATH}")
+  
+# Known Hosts
+  while read -r line
+  do
+     scp ~/.ssh/known_hosts $line:~/.ssh/known_hosts
+	 
   done < <(grep . "${HOSTS_FILEPATH}")
 
-
-
-
-
-
 }
+
+
 # Deploy Priv Key on Master Node (required if MASTER is not on this host)
 deployPrivKey(){
     readHostRoles
@@ -721,6 +663,8 @@ deployPrivKey(){
     done
 
 }
+
+
 printHostRoles(){
   readHostRoles
   for host in "${!HOST_ROLES[@]}"; do
@@ -752,6 +696,9 @@ prepareHostsFile(){
   awk '!seen[$0]++' "${HOSTS_FILEPATH}.tmp" > $HOSTS_FILEPATH
   rm "${HOSTS_FILEPATH}.tmp"
 }
+
+
+
 setSlaves(){
   sed -i '/SLAVE/d' $CLUSTER_FILEPATH
   ACTIVE_SLAVES=0
@@ -961,8 +908,7 @@ helpFunction(){
     deploy.sh <function>
 
     <function>:
-      - prepareHostsFile      (0. Generates the hosts.txt file based on the cluster.txt, which is required as a preperation step for the keyExchange)
-      - keyExchange           (0. Exchange SSH Keys to enable passwordless access to worker nodes)
+      - keyExchange           (0. Exchange SSH Keys to enable passwordless access to worker nodes - requires sshpass)
       - initializeProject     (1. Initialize the project structure and performance tools on all worker nodes. This will configure java and bpftrace on all worker nodes)
       - downloadFrameworks    (2. Download redis, kafka, flink, spark, etc. locally on this node)
       - deployFrameworks      (3. Deploy frameworks on the respective nodes)

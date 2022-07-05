@@ -3,11 +3,11 @@
 # Licensed under the terms of the Apache License 2.0. Please see LICENSE file in the project root for terms.
 
 # PLEASE CHECK THESE SETTINGS
-PROJECT_HOME=/root/YSB/sps_cpu_bench_internal
+PROJECT_HOME=/YSB-task-level
 
-PARTITIONS=$(cat "/root/YSB/sps_cpu_bench_internal/conf/clusterConf.yaml" | grep kafka.partitions | awk -F ": " '{print $2}')
-KAFKALOGS=/tmp/mnt/ramdisk/kafka-logs/ #As defined in server.properties
-ZKSTATE=/tmp/mnt/ramdisk/zookeeper/
+PARTITIONS=$(cat "${PROJECT_HOME}/conf/clusterConf.yaml" | grep kafka.partitions | awk -F ": " '{print $2}')
+KAFKALOGS=/tmp/kafka-logs/ #As defined in server.properties
+ZKSTATE=/tmp/zookeeper/
 
 # MAINTAINED BY DEPLOY.SH
 KAFKA_VERSION="3.0.0"
@@ -49,7 +49,7 @@ BPF_PROFILING="TRUE"
 BPF_PROFILING2="TRUE"
 WAIT_TIME=0
 TIME_OUT=600
-DEBUG="TRUE"
+DEBUG="FALSE"
 DEBUG_STDOUT="FALSE"
 DEBUG2="FALSE"
 DEBUG2_STDOUT="FALSE"
@@ -1411,6 +1411,7 @@ while [ "$1" != "" ]; do
       ;;
 		-d| --debug )		 shift
       DEBUG=$1
+	  DEBUG_STDOUT=$1
       ;;
 		-w| --warmup )		shift
       WARMUP_PHASE=$1

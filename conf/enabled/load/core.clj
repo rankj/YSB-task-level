@@ -1,1 +1,0 @@
-/root/YSB/sps_cpu_bench_internal/conf/template/load/core-default.clj

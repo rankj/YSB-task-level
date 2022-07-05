@@ -1,5 +1,5 @@
 #!/bin/bash
-PROJECT_HOME=/root/YSB/sps_cpu_bench_internal
+PROJECT_HOME=/YSB-task-level
 OPERATION="HELP"
 TIMER=300
 WAIT_TIME=0
@@ -534,10 +534,10 @@ run() {
     fi
     consolidate_cpu_measurment
 	
-	rm $PROJECT_HOME/last_results/*.reversed.txt
-	rm $PROJECT_HOME/last_results/*.collapsed.txt
-	rm $PROJECT_HOME/last_results/*_result.bak
-	rm $PROJECT_HOME/last_results/*_result.txt
+	rm -f $PROJECT_HOME/last_results/*.reversed.txt
+	rm -f $PROJECT_HOME/last_results/*.collapsed.txt
+	rm -f $PROJECT_HOME/last_results/*_result.bak
+	rm -f $PROJECT_HOME/last_results/*.map
     progress "FINISHED_RESULT_AGGREGATION"
 
   #####   Global Perf Stat   #####
