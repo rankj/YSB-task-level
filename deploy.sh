@@ -469,7 +469,13 @@ downloadFrameworks(){
 initializeProject(){
   #Deploy the initial project structure including BPF, perf scripts, java mapping agent, ...
   readHostRoles
+  cd $PROJECT_HOME/spark-benchmarks/target/
+  zip -F spark-cp-jar.zip --out spark-cp-jar-merged.zip
+  unzip spark-cp-jar-merged.zip
+  sleep 2
+  rm spark-cp-jar-merged.zip
   cd $PROJECT_HOME
+  
   for HOST in "${!HOST_ROLES[@]}"; do
     ROLE=${HOST_ROLES[$HOST]}
     echo "[INFO] initialize Host $HOST with Role $ROLE"
