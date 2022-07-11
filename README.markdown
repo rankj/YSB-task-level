@@ -18,7 +18,7 @@ This project is based on the Yahoo Streaming Benchmark (YSB) and resembles the s
 
 <div align="left">
       <a href="https://youtu.be/mWEiSvDezoI">
-         <img src="https://i9.ytimg.com/vi/mWEiSvDezoI/mqdefault.jpg?v=62cb6981&sqp=CNzbrZYG&rs=AOn4CLDlme5b9jKgz8hLmI6UXjrBX6mM3Q" style="width:100%;">
+         <img src="https://github.com/rankj/YSB-task-level/blob/master/Thumbnail.png" style="width:100%;">
       </a>
 </div>
 
