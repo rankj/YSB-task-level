@@ -14,7 +14,7 @@ We support the following engines:
 
 This project is based on the Yahoo Streaming Benchmark (YSB) and resembles the same pipeline. However, we extended the original implementation. Most importantly we included a monitoring toolchain based on bpftrace and the perf-map-agent.
 
-### Instructions
+### Instructions (Video)
 
 <div align="left">
       <a href="https://youtu.be/mWEiSvDezoI">
