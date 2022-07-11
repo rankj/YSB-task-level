@@ -109,7 +109,7 @@ createDefaultConfigs(){
     ##########
     #Create Default Configuration Files
     ##########
-	echo "spark.executor.extraJavaOptions=-XX:-TieredCompilation -XX:CompileThreshold=1" >> $SparkConfDefault
+	echo "spark.executor.extraJavaOptions=-XX:-TieredCompilation -XX:CompileThreshold=1 -XX:+PreserveFramePointer" >> $SparkConfDefault
 	echo "spark.driver.memory 16g" >> $SparkConfDefault
     echo "spark.executor.memory 8g" >> $SparkConfDefault
     echo "spark.executor.cores 8" >> $SparkConfDefault
@@ -118,7 +118,7 @@ createDefaultConfigs(){
     echo "spark.task.cpus 8" >> $SparkConfDefault
     echo "spark.eventLog.enabled  false " >> $SparkConfDefault
 
-    echo "env.java.opts: \"-XX:CompileThreshold=1 -XX:-TieredCompilation\"" >> $FlinkConfDefault
+    echo "env.java.opts: \"-XX:CompileThreshold=1 -XX:-TieredCompilation -XX:+PreserveFramePointer\"" >> $FlinkConfDefault
 	echo "jobmanager.rpc.port: 6123" >> $FlinkConfDefault
     echo "jobmanager.memory.process.size: 1600m" >> $FlinkConfDefault
     echo "taskmanager.memory.process.size: 4096m" >> $FlinkConfDefault
@@ -471,9 +471,12 @@ initializeProject(){
   readHostRoles
   cd $PROJECT_HOME/spark-benchmarks/target/
   zip -F spark-cp-jar.zip --out spark-cp-jar-merged.zip
+  zip -F spark-structured-jar.zip --out spark-structured-jar-merged.zip
   unzip spark-cp-jar-merged.zip
+  unzip spark-structured-jar-merged.zip
   sleep 2
   rm spark-cp-jar-merged.zip
+  rm spark-structured-jar-merged.zip
   cd $PROJECT_HOME
   
   for HOST in "${!HOST_ROLES[@]}"; do
@@ -787,7 +790,7 @@ setParallelism()
         # Set active worker nodes in cluster.txt according to $NODES
         setSlaves
 
-        if [ $SMT != 0 ] ;then setSMTLevel ;fi
+        
 
 
         # clusterConf.yaml
@@ -884,28 +887,10 @@ setSMTLevel(){
                 ROLE=${HOST_ROLES[$HOST]}
                 if [[ $ROLE == *"SLAVE"* ]]; then
                     echo "Connecting to $HOST"
-                    ssh -n $HOST "ppc64_cpu --smt=$SMT"
-                    #ssh -n $HOST "apt-get install -y ntp"
-                    #ssh -n $HOST "service ntp stop"
-                    #ssh -n $HOST "ntpd -gq"
-                    #ssh -n $HOST "service ntp start"
+					ssh -n $HOST "echo 0 > /proc/sys/kernel/perf_cpu_time_max_percent"
+					if [ $SMT != 0 ] ;then ssh -n $HOST "ppc64_cpu --smt=$SMT" ;fi
                 fi
            done
-}
-
-
-
-testInstallation(){
- {
-  while IFS= read -r line
-  do
-	local HOST=`echo $line`
-    if [[ $(ssh -n $HOST "echo $PASSWORD | sudo -S bpftrace | grep -c  'bpftrace [options] filename'; ") == 0 ]]; then
-	  echo "Bpftrace is not yet installed for host $HOST"
-	fi
-  done
-  } < $CLUSTER_FILEPATH
-  # Check perf-map-agent -> start java process like jconsole -> jmap -> check symbol resolution
 }
 
 helpFunction(){

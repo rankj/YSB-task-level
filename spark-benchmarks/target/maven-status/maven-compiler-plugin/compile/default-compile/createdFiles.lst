@@ -1,0 +1,10 @@
+spark/benchmark/SparkCPImplementierung$CalculatedEvent.class
+spark/benchmark/SparkCPImplementierung$1.class
+spark/benchmark/SparkCPImplementierung$ProjectedEvent.class
+spark/benchmark/SparkCPImplementierung$EnrichClass.class
+spark/benchmark/SparkCPImplementierung$ProjectionClass.class
+spark/benchmark/SparkCPImplementierung$AdsEvent.class
+spark/benchmark/SparkCPImplementierung.class
+spark/benchmark/SparkCPImplementierung$newRedisSinkClass.class
+spark/benchmark/SparkCPImplementierung$DeserializeClass.class
+spark/benchmark/SparkCPImplementierung$JoinedEvent.class
