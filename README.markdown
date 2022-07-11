@@ -16,8 +16,11 @@ This project is based on the Yahoo Streaming Benchmark (YSB) and resembles the s
 
 ### Instructions
 
-<iframe width="560" height="315"src="https://youtu.be/mWEiSvDezoI frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<div align="left">
+      <a href="[https://www.youtube.com/watch?v=5yLzZikS15k](https://youtu.be/mWEiSvDezoI)">
+         <img src="[https://img.youtube.com/vi/5yLzZikS15k](https://youtu.be/mWEiSvDezoI)/0.jpg" style="width:100%;">
+      </a>
+</div>
 
 
 ### Related Work
