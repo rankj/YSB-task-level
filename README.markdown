@@ -14,14 +14,13 @@ We support the following engines:
 
 This project is based on the Yahoo Streaming Benchmark (YSB) and resembles the same pipeline. However, we extended the original implementation. Most importantly we included a monitoring toolchain based on bpftrace and the perf-map-agent.
 
-### Instructions
+### Instructions (Video)
 
- <iframe width="560" height="315"
-src="https://youtu.be/U523a6GnTXM 
-frameborder="0" 
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
-
+<div align="left">
+      <a href="https://youtu.be/U523a6GnTXM">
+         <img src="https://github.com/rankj/YSB-task-level/blob/master/video-thumbnail.png" style="width:100%;">
+      </a>
+</div>
 
 
 ### Related Work
