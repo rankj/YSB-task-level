@@ -1,6 +1,7 @@
-# [TLC Evaluation of Distributed Stream Processing Systems  ]
-The Task Level CPU Efficiency Evaluation for Distributed Stream Processing Systems
+# [TLC - Task Level CPU Evaluation for Distributed Stream Processing Systems  ]
 
+### Mission
+Our mission is to empower developers to optimize the performance of big data systems through innovative performance tools and awareness. As the complexity of IT systems continues to increase, it is crucial to continuously improve and advance the ways in which we monitor and improve performance in order to ensure efficient and effective operation.
 
 ### Background
 This repository provides a CPU monitoring concept and benchmark integration to allow fine-grained CPU evaluations of Distributed Stream Processing Systems (DSPS).
